@@ -1,0 +1,27 @@
+{
+  "name": "Recorder",
+  "version": "1.0.0",
+  "description": "Recorder App",
+  "license": "ISC",
+  
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "start_dev": "cross-env NODE_ENV=development electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -c.mac.identity=null"
+
+  },
+  "author": "",
+  "dependencies": {},
+  "build":{
+    "appId": "com.devspindula.recorder"
+  }
+,
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "electron": "^43.4.0",
+    "electron-builder": "^26.15.3"
+  }
+}
